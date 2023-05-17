@@ -31,24 +31,80 @@
 
     .flex-container{
         display: flex;
-        background-color: #006A6A;
         justify-content: space-around;
-        padding: 20px;
+        color: #E9E9E9;
     }
 
     .header-title{
         color: #006666;
         font-size: 32px;
         font-weight: 700;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
 
     .header-secondline{
         color: #008686;
         font-size: 18px;
         font-weight: 500;
-        padding-bottom: 15px;
+        margin-bottom: 15px;
     }
+
+    .col-1{
+        background-color: #006A6A;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .col-2{
+        background-color: #008C8B;
+        width: 50%;
+        padding: 20px;
+    }
+
+    .article-firstline{
+        font-size: 18px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .article-secondline{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .money{
+        font-size: 26px;
+        font-weight: 700;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .por-mes{
+        font-size:14px;
+        font-style: italic;
+    }
+
+    .article-thirdline{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .article-button{
+        color: #006A6A;
+        background-color: #E9E9E9;
+        font-size: 16px;
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 5px;
+
+        cursor: pointer;
+    }
+
+    .article-button:hover{
+        background-color: #CCCCCC;
+    }
+
 
 </style>
 
@@ -67,10 +123,20 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna1
+            <div class="col-1">
+                <div class="article-firstline">
+                    Assinatura mensal:
+                </div>
+                <div class="article-secondline">
+                    <span class="money">R$ 99,99</span>
+                    <span class="por-mes">por mês.</span>
+                </div>
+                <div class="article-thirdline">
+                    Cancele a qualquer momento.
+                </div>
+                <button class="article-button">Assine agora</button>
             </div>
-            <div>
+            <div class="col-2">
                 Coluna2
             </div>
         </div>
